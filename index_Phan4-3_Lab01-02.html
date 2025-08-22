@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Tin tức</title>
     <meta charset="UTF-8">
+    <title>Tin tức</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+        .news {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px; 
+            padding: 15px;
+            margin: 15px auto;
+            width: 500px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .news img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .news h2 {
+            color: #0056b3;
+        }
+        .news button {
+            padding: 8px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .news button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>Bản tin công nghệ</h1>
 
-    <div>
+    <div class="news">
         <h2>Ra mắt iPhone 15</h2>
-        <img src="./Img/cc.jpg" width="300">
-        <p>Apple chính thức ra mắt iPhone 15  </p>
+        <img src="./Img/cc.jpg" width="300" alt="iPhone 15">
+        <p>Apple chính thức ra mắt iPhone 15 Pro với thiết kế titan siêu nhẹ...</p>
         <button>Đọc tiếp</button>
     </div>
 
-    <div>
+    <div class="news">
         <h2>AI phát triển mạnh</h2>
-        <img src="./Img/aa.jpg" width="300">
-        <p>Công nghệ AI đang thay đổi cuộc sống, từ giáo dục, y tế </p>
+        <img src="./Img/aa.jpg" width="300" alt="AI phát triển">
+        <p>Công nghệ AI đang thay đổi cuộc sống, từ giáo dục, y tế đến thương mại...</p>
         <button>Đọc tiếp</button>
     </div>
 </body>
