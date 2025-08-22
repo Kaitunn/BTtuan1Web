@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biễu mẫu nâng cao</title>
+</head>
+<body>
+
+    <h1> Phần 3: Biểu mẫu nâng cao</h1>
+    <nav>
+        <a href="#dang-nhap">Đăng nhập</a> |
+        <a href="#khao-sat">Khảo sát</a> |
+        <a href="#dat-ban">Đặt bàn</a> |
+        <a href="#phan-hoi">Phản hồi</a> |
+        <a href="#thanh-toan">Thanh toán</a>
+    </nav>
+    <h1>Biểu mẫu nâng cao</h1>
+    <!-- 1. Form đăng nhập -->
+  <h2>Form đăng nhập</h2>
+  <form>
+    Tên đăng nhập: <input type="text" name="username" required><br><br>
+    Mật khẩu: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Đăng nhập">
+  </form>
+
+  <hr>
+  <h2>Form khảo sát ý kiến</h2>
+  <form>
+    <p>Bạn thấy sản phẩm thế nào?</p>
+    <input type="radio" name="danhgia" value="tot"> Tốt
+    <input type="radio" name="danhgia" value="binhthuong"> Bình thường
+    <input type="radio" name="danhgia" value="kem"> Kém
+    <br><br>
+
+    <p>Bạn thích tính năng nào?</p>
+    <input type="checkbox" name="tinhnang" value="tocdo"> Tốc độ
+    <input type="checkbox" name="tinhnang" value="giaodien"> Giao diện
+    <input type="checkbox" name="tinhnang" value="baomat"> Bảo mật
+    <br><br>
+
+    <textarea name="ykien" rows="4" cols="40"></textarea><br><br>
+
+    <select name="mucdich">
+      <option>Học tập</option>
+      <option>Làm việc</option>
+      <option>Giải trí</option>
+    </select><br><br>
+
+    <input type="submit" value="Gửi khảo sát">
+  </form>
+
+  <hr>
+  <!-- 3. Form đặt bàn -->
+  <h2>Form đặt bàn</h2>
+  <form>
+    Họ tên: <input type="text" name="ten"><br><br>
+    Số người: <input type="number" name="songuoi"><br><br>
+    Ngày giờ: <input type="datetime-local" name="thoigian"><br><br>
+    Yêu cầu đặc biệt:<br>
+    <textarea name="yeucau" rows="3" cols="40"></textarea><br><br>
+    <input type="submit" value="Đặt bàn">
+  </form>
+
+  <hr>
+  <!-- 4. Form phản hồi -->
+  <h2>Form phản hồi khách hàng</h2>
+  <form>
+    Đánh giá: 
+    <input type="radio" name="sao" value="1">1
+    <input type="radio" name="sao" value="2">2
+    <input type="radio" name="sao" value="3">3
+    <input type="radio" name="sao" value="4">4
+    <input type="radio" name="sao" value="5">5<br><br>
+
+    Ý kiến:<br>
+    <textarea name="phanhoi" rows="4" cols="40"></textarea><br><br>
+
+    Email: <input type="email" name="email"><br><br>
+
+    <input type="submit" value="Gửi phản hồi">
+  </form>
+
+  <hr>
+
+  <!-- 5. Form thanh toán -->
+  <h2>Form thanh toán đơn hàng</h2>
+  <form>
+    
+    Họ tên: <input type="text" name="hoten"><br><br>
+    Địa chỉ: <input type="text" name="diachi"><br><br>
+    Số điện thoại: <input type="tel" name="sdt"><br><br>
+
+    Hình thức thanh toán:<br>
+    <input type="radio" name="thanhtoan" value="cod"> Thanh toán khi nhận hàng<br>
+    <input type="radio" name="thanhtoan" value="chuyenkhoan"> Chuyển khoản<br>
+    <input type="radio" name="thanhtoan" value="the"> Thẻ<br><br>
+
+    <input type="submit" value="Thanh toán">
+  </form>
+
+</body>
+</html>
+
+
